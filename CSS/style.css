@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid red !important;
+}
+
+:root {
+    --night-mode: #222222;
+    --Light-gray: #848484;
+    --white: #ececec;
+}
