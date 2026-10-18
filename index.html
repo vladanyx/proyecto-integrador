@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="main-header">
+        <div class="logo">
+            <img src="./assets/img/favicon.png" alt="">
+            <span>Luna <br>Boullosa</span>
+        </div>
         <nav>
             <ul>
-                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -21,22 +26,27 @@
     </header>
     <main class="page-content">
         <section id="hero">
-            <h1>Luna Boullosa <br>WEB DEVELOPER</h1>
+           <div>
+             <h1>Luna Boullosa <br><span>Web Developer</span></h1>
             <p>A skilled developer crafting modern scalable and responsive web applications. LET'S BUILD SOMETHING
                 GREAT!
             </p>
             <button class="main-button"><a href="#gallery">VIEW PROJECTS</a></button>
+           </div>
+           <img src="./assets/img/female-web-developer.png" alt="">
         </section>
         <section id="services">
             <h2>Services</h2>
             <div>
                 <article class="dev">
+                    <img src="./assets/img/frontend.png" alt="">
                     <h3>FRONTEND DEV</h3>
                     <p>I take your ideas to the next level, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
                         consequatur.</p>
                     <button><a href="#contact">Contact me!</a></button>
                 </article>
-                <article>
+                <article class="dev">
+                    <img src="./assets/img/backend.png" alt="">
                     <h3>BACKEND DEV</h3>
                     <P>I take your ideas to the next level, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
                         consequatur.</P>
@@ -47,32 +57,70 @@
         <section id="gallery">
             <h2>Gallery</h2>
             <div>
-                <img class="img" src="./img/gallery/page-01.webp" alt="landing-example-01">
-                <img class="img" src="./img/gallery/page-02.avif" alt="landing-example-02">
-                <img class="img" src="./img/gallery/page-03.jpg" alt="landing-example-03">
-                <img class="img" src="./img/gallery/page-04.webp" alt="landing-example-04">
-                <img class="img" src="./img/gallery/page-05.png" alt="landing-example-05">
-                <img class="img" src="./img/gallery/page-06.webp" alt="landing-example-06">
-                <img class="img" src="./img/gallery/page-07.jpeg" alt="landing-example-07">
-                <img class="img" src="./img/gallery/page-08.png" alt="landing-example-08">
-                <img class="img" src="./img/gallery/page-09.png" alt="landing-example-09">
-                <img class="img" src="./img/gallery/page-10.jpg" alt="landing-example-10">
-                <img class="img" src="./img/gallery/page-11.jpg" alt="landing-example-11">
+                <img class="img" src="./assets/img/gallery/page-01.webp" alt="landing-example-01">
+                <img class="img" src="./assets/img/gallery/page-02.avif" alt="landing-example-02">
+                <img class="img" src="./assets/img/gallery/page-03.jpg" alt="landing-example-03">
+                <img class="img" src="./assets/img/gallery/page-04.webp" alt="landing-example-04">
+                <img class="img" src="./assets/img/gallery/page-05.png" alt="landing-example-05">
+                <img class="img" src="./assets/img/gallery/page-06.webp" alt="landing-example-06">
+                <img class="img" src="./assets/img/gallery/page-07.jpeg" alt="landing-example-07">
+                <img class="img" src="./assets/img/gallery/page-08.png" alt="landing-example-08">
+                <img class="img" src="./assets/img/gallery/page-09.png" alt="landing-example-09">
+                <img class="img" src="./assets/img/gallery/page-10.jpg" alt="landing-example-10">
+                <img class="img" src="./assets/img/gallery/page-11.jpg" alt="landing-example-11">
             </div>
         </section>
         <section id="contact">
-            <h2>Contact me</h2>
+            <h2>Contact me here</h2>
             <ul>
                 <li><a href="https://github.com/vladanyx" target="_blank">Github</a></li>
                 <li><a href="https://ar.linkedin.com/in/luna-boullosa-802aab395" target="_blank">LinkedIn</a></li>
                 <li><a href="mailto:luna.boukor@gmail.com" target="_blank">Email</a></li>
                 <li><a href="http://wa.me/541131330290" target="_blank">WhatsApp</a></li>
             </ul>
+            <h3>...or write to me directly down below</h3>
+            <form>
+                <fieldset>
+                    <legend>Your data</legend>
+                    <label for="">Full name</label>
+                    <input type="text" placeholder="Your name">
+                    <label for="">E-mail</label>
+                    <input type="email" placeholder="E-mail">
+                    <label for="">Cellphone</label>
+                    <input type="number" placeholder="Number">
+                </fieldset>
+                <fieldset>
+                    <legend>Tell me what you need</legend>
+                    <select name="" id="dropdown">
+                        <option value="">Select</option>
+                        <option value="">More info</option>
+                        <option value="">Question</option>
+                        <option value="">Support</option>
+                        <option value="">Lets work together</option>
+                    </select>
+                    <textarea name="email-message" id="email-message">Hi Luna!</textarea>
+                </fieldset>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
         </section>
     </main>
 
     <footer class="main-footer">
-
+   <div class="logo">
+            <img src="./assets/img/favicon.png" alt="">
+            <span>Luna <br>Boullosa</span>
+        </div>
+        <h3>Useful links</h3>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <small>All rights reserved. Luna Boullosa <span>&copy;</span></small>
     </footer>
 </body>
 
