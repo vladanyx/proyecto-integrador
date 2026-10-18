@@ -120,9 +120,9 @@ h1 span {
 #hero img {
     width: 80vw;
 }
- 
+
 h2 {
-font-size: 30px;
+    font-size: 30px;
 }
 
 .dev {
@@ -141,7 +141,7 @@ font-size: 30px;
 }
 
 .dev p {
-    margin-bottom:  15px;
+    margin-bottom: 15px;
 }
 
 #gallery {
@@ -150,10 +150,10 @@ font-size: 30px;
 }
 
 #gallery div {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 #gallery img {
@@ -178,6 +178,7 @@ form {
     background-color: var(--light-gray);
     margin-bottom: 15px;
 }
+
 form fieldset {
     margin-bottom: 15px;
 }
@@ -193,7 +194,7 @@ form button {
 /*  */
 /*  */
 
-.main-footer h3{
+.main-footer h3 {
     margin: 15px 0;
 }
 
@@ -216,7 +217,97 @@ form button {
     display: block;
     text-decoration: underline;
     transform: scale(1.05);
-
 }
 
+small {
+    color: var(--white);
+    display: block;
+    text-align: center;
+}
 
+@media (min-width: 768px) {
+
+    body {
+        width: 90vw;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #hero {
+        flex-direction: row;
+    }
+
+    #hero div {
+        width: 45vw;
+    }
+
+    #hero img {
+        width: 45vw;
+    }
+
+    .button {
+        width: 25vw;
+    }
+
+    .button a {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    #hero p {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    #services div {
+        display: flex;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    #gallery div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #gallery img {
+        width: 40vw;
+        /* height: 19vh; */
+    }
+
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    .main-footer {
+        display: flex;
+    }
+}
+
+@media (min-width 900px) {
+        #gallery div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #gallery img {
+        width: 44vw;
+    }
+}
