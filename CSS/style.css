@@ -123,6 +123,7 @@ h1 span {
     margin-bottom: 15px;
     outline: 2px var(--pink) solid;
     border-radius: 20px;
+    border: none;
 }
 
 .button a {
@@ -170,4 +171,8 @@ gap: 5px;
 
 #gallery img {
     width: 90vw;
+}
+
+#contact h2 {
+    margin: 15px 0;
 }
