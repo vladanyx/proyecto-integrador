@@ -282,6 +282,7 @@ small {
     #gallery div {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     #gallery img {
@@ -301,13 +302,16 @@ small {
     }
 }
 
-@media (min-width 900px) {
+@media (min-width: 900px) {
+
         #gallery div {
+            display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     #gallery img {
-        width: 44vw;
+        width: 350px;
     }
 }
