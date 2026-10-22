@@ -53,6 +53,11 @@ a {
     letter-spacing: 5px;
 }
 
+.logo a {
+    text-decoration: none;
+
+}
+
 .logo img {
     width: 45px;
 }
