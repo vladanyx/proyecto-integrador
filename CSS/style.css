@@ -109,17 +109,18 @@ h1 span {
 }
 
 .button {
-    width: 45vw;
-    height: 35px;
+    width: 65vw;
     background-color: var(--light-gray);
     margin-bottom: 15px;
     outline: 2px var(--pink) solid;
     border-radius: 20px;
     border: none;
-}
-
-.button a {
     color: var(--mint);
+    padding: 7px 0;
+    text-decoration: none;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
 }
 
 #hero img {
@@ -220,6 +221,10 @@ form button {
     color: var(--mint);
 }
 
+form button:hover {
+cursor: pointer;
+}
+
 .main-footer {
     margin-bottom: 10px;
 }
@@ -260,7 +265,7 @@ small {
 
     body {
         width: 90vw;
-        max-width: 900px;
+        max-width: 1024px;
         margin: 0 auto;
     }
 
@@ -372,7 +377,13 @@ small {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
+
+    body {
+        width: 90vw;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 
     #gallery div {
         display: flex;
