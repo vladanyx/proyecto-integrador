@@ -39,6 +39,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    align-items: center;
 }
 
 .logo {
@@ -168,6 +169,14 @@ h2 {
     margin: 15px 0;
 }
 
+#contact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -184,7 +193,7 @@ form fieldset {
     padding: 10px 15px;
     width: 100%;
     border-radius: 5px;
-}
+  }
 
 form fieldset>div {
     display: flex;
@@ -195,7 +204,8 @@ input::placeholder {
     color: var(--pink);
 }
 
-#dropdown, textarea {
+#dropdown,
+textarea {
     color: var(--pink);
 }
 
@@ -210,12 +220,12 @@ form button {
     color: var(--mint);
 }
 
-.main-footer{
-margin-bottom: 10px;
+.main-footer {
+    margin-bottom: 10px;
 }
 
 .main-footer h3 {
-    margin: 15px 0;
+    margin-top: 15px;
 }
 
 .main-footer nav ul {
@@ -261,6 +271,7 @@ small {
 
     #hero {
         flex-direction: row;
+        margin-bottom: 20px;
     }
 
     #hero div {
@@ -280,7 +291,7 @@ small {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 20px;
     }
 
@@ -292,12 +303,21 @@ small {
         font-size: 40px;
     }
 
+    #services {
+        margin-bottom: 20px;
+    }
+
     #services div {
         display: flex;
+        gap: 50px;
     }
 
     h3 {
         font-size: 25px;
+    }
+
+    #gallery {
+        margin-bottom: 20px;
     }
 
     #gallery div {
@@ -314,15 +334,33 @@ small {
     /*  */
     /*  */
 
-fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-input {
-    width: 400px;
-}
+    select {
+        align-self: flex-start;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    form button {
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 400px;
+    }
 
     /*  */
     /*  */
@@ -336,8 +374,8 @@ input {
 
 @media (min-width: 900px) {
 
-        #gallery div {
-            display: flex;
+    #gallery div {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
